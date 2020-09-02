@@ -9,7 +9,7 @@ int main()
 		{
 			printf("* ");
 		}
-		for (j = (x - 1) * 2; j >= 2 * i; j--)
+		for (j = 2 * i; j <= (x - 1) * 2; j++)
 		{
 			printf("  ");
 		}
@@ -26,15 +26,15 @@ int main()
 	printf("\n");
 	for (i = 2; i <= x; i++)
 	{
-		for (j = x; j >= i; j--)
+		for (j = i; j <= x; j++)
 		{
 			printf("* ");
 		}
-		for (j = 1; j <= 2 * (i - 1) - 1; j++)
+		for (j = 1; j <= 2 * i - 3; j++)
 		{
 			printf("  ");
 		}
-		for (j = x; j >= i; j--)
+		for (j = i; j <= x; j++)
 		{
 			printf("* ");
 		}
